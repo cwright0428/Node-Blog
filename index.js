@@ -78,7 +78,7 @@ server.post('/api/users',(req, res) => {
         )}
     else(res.status(404).json({message:'please add a username'}))
         .catch((err) => {
-            res.status(500).json({message: 'It\s broken'})
+            res.status(500).json({message: 'server error'})
         })
 });
 
